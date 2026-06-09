@@ -1,15 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luis Eduardo ❤️ Damarys</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    max-width:800px;
+    padding:30px;
+}
+
+h1{
+    font-size:3em;
+}
+
+p{
+    font-size:1.2em;
+    line-height:1.8;
+}
+
+.heart{
+    font-size:60px;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+</style>
+
 <script>
 const senha = prompt(
 "❤️ Bem-vinda, meu amor! ❤️\n\nDigite a data que marcou o início da nossa história (DDMMAAAA):"
 );
 
 if(senha !== "11122025"){
-    document.body.innerHTML = `
+    document.write(`
     <div style="text-align:center;margin-top:100px;font-family:Arial;">
         <h1>💔 Senha incorreta</h1>
         <p>Tente lembrar da data mais especial para nós. ❤️</p>
     </div>
-    `;
+    `);
     throw new Error("Acesso negado");
 }
 </script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="heart">❤️</div>
+
+    <h1>Feliz Dia dos Namorados</h1>
+
+    <h2>Luis Eduardo & Damarys</h2>
+
+    <p>
+        Meu amor,
+        <br><br>
+        Hoje é um dia especial para celebrar tudo o que sentimos um pelo outro.
+        Você trouxe mais felicidade, carinho e amor para minha vida.
+        Cada momento ao seu lado se torna uma lembrança inesquecível.
+        <br><br>
+        Obrigado por existir, por me fazer sorrir e por compartilhar sua vida comigo.
+        Independentemente da distância ou das dificuldades, meu coração sempre encontra o caminho até você.
+        <br><br>
+        Eu te amo hoje, amanhã e todos os dias que virão. ❤️
+    </p>
+
+    <h2>✨ Para sempre nós ✨</h2>
+</div>
+
+</body>
+</html>
