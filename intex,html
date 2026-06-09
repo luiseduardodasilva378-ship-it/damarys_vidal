@@ -1,0 +1,15 @@
+<script>
+const senha = prompt(
+"❤️ Bem-vinda, meu amor! ❤️\n\nDigite a data que marcou o início da nossa história (DDMMAAAA):"
+);
+
+if(senha !== "11122025"){
+    document.body.innerHTML = `
+    <div style="text-align:center;margin-top:100px;font-family:Arial;">
+        <h1>💔 Senha incorreta</h1>
+        <p>Tente lembrar da data mais especial para nós. ❤️</p>
+    </div>
+    `;
+    throw new Error("Acesso negado");
+}
+</script>
